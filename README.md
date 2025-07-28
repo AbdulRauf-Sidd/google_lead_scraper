@@ -24,7 +24,7 @@ A modern Flask web application that allows users to search for professional lead
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AbdulRauf-Sidd/google_lead_scraper.git
    cd google_lead_scraper
    ```
 
