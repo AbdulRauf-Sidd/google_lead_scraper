@@ -169,12 +169,12 @@ def search():
         query = f'site:{data["website"]} "{data["city"]}" "{data["occupation"]}" "@{data["email_domain"]}"'
         logger.info(f"Constructed search query: {query}")
         
-        # Fetch results
+        # Fetch results (up to 1000 results maximum)
         all_data = []
         total_items_processed = 0
         items_without_emails = 0
         
-        for i in range(0, 100, 10):
+        for i in range(0, 1000, 10):  # Google API returns max 10 results per request
             results = fetch_results(query, start=i + 1)
             if not results:
                 logger.info(f"No more results found at offset {i}")

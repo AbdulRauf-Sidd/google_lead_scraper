@@ -141,6 +141,7 @@ python log_viewer.py app.log --all
 ## Security Features
 
 - **Rate Limiting**: 100 requests per day, 10 per minute
+- **Search Capacity**: Up to 1000 results per search
 - **API Key Validation**: Validates the provided API key against the server's key
 - **Input Validation**: Server-side validation of all required fields
 - **Error Handling**: Comprehensive error handling without exposing sensitive information
